@@ -34,7 +34,7 @@ LAB SETUP INSTRUCTIONS
  *   - show console.log("API running at http://localhost:3000")
  *   HINT: 
  *     const app = express();
- *     app.listen(3000, ()=> console.log(...));
+ *     app.listen(3000, ()=> console.log("API running at http://localhost:3000"));
  * 
  *============================================
  * TODO-2 (/echo route):
@@ -109,6 +109,7 @@ const app = express();
 
 
 // create server
+app.listen(3000, ()=> console.log("API running at http://localhost:3000"));
 
 
 // Query params: /echo?name=Ali&age=22
